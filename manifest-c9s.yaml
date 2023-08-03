@@ -21,7 +21,7 @@ repos:
   - baseos
   - appstream
   # CentOS Extras Common repo for SIG RPM GPG keys
-  - extras-common
+  # - extras-common
   # CentOS NFV SIG repo for openvswitch
   - sig-nfv
   # CentOS Cloud SIG repo for cri-o, cri-tools and conmon-rs
