@@ -21,7 +21,6 @@ repos:
   - rhel-9.2-baseos
   - rhel-9.2-appstream
   - rhel-9.2-fast-datapath
-  - rhel-9.2-server-ose-4.14
 
 # We include hours/minutes to avoid version number reuse
 automatic-version-prefix: "414.92.<date:%Y%m%d%H%M>"
@@ -121,12 +120,3 @@ repo-packages:
     packages:
       # We want the one shipping in RHEL, not the equivalently versioned one in RHAOS
       - nss-altfiles
-  - repo: rhel-9.2-server-ose-4.14
-    packages:
-      - conmon-rs
-      - cri-o
-      - cri-tools
-      - openshift-clients
-      - openshift-hyperkube
-      # Use legacy coreos/toolbox until we're ready to use containers/toolbox
-      - toolbox
